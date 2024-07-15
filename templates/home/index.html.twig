@@ -1,0 +1,22 @@
+{% extends "base.html.twig" %}
+
+  {% block title %} Page d'accueil{% endblock %}
+
+
+    {% block body %}
+    <main> 
+    <h1>ma page d'accueil</h1>
+    <h2>{{name}}</h2>
+    <p>{{coucou}}</p>
+    </main>
+    <pre>
+        {{ dump() }}
+    </pre>m:
+
+    <h1>Animals</h1>
+<ul>
+    {% for animal in animals %}
+        <li>{{ animal }}</li>
+    {% endfor %}
+</ul>
+    {% endblock %}
